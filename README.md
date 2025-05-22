@@ -1,2 +1,2 @@
 # data-science-challenge-alura-store
-praticando python data science
+Desafio pratico em analise de dados utilizando python e pandas 
