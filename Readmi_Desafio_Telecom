@@ -1,0 +1,35 @@
+Introdução
+O objetivo desta análise é compreender os fatores que influenciam a evasão de clientes em uma empresa de telecomunicações. 
+Por impacta diretamente a receita e a sustentabilidade do negócio, a evasão representa um desafio estratégico, onde ao se identificar padrões de comportamento entre clientes que cancelam o serviço, é possível desenvolver ações preventivas e melhorar a retenção.
+
+Na fase de Limpeza e Tratamento de Dados, foram realizados os seguintes passos para garantir a qualidade da informação:
+- Remoção de valores ausentes e espaços em branco em colunas críticas como Churn e TotalCharges.
+- Conversão de valores categóricos como "Yes"/"No" para binários (1/0) para facilitar análises quantitativas.
+- Padronização de colunas numéricas, como account.Charges.Total, garantindo que fossem interpretadas corretamente como números.
+- Eliminação de duplicatas e correção de tipos de dados para evitar distorções nas análises.
+
+
+Numa segunda fase, realizamos a Análise Exploratória dos Dados atraves das avaliações dos graficos:
+🔹 Distribuição de Churn
+🔹 Evasão por Variáveis Categóricas
+    Foram analisadas variáveis como:
+    - Gênero: Clientes do gênero X apresentaram maior taxa de evasão.
+    - Tipo de Contrato: Contratos mensais tiveram maior incidência de churn.
+    - Método de Pagamento: Pagamentos via boleto bancário mostraram maior risco de cancelamento.
+
+🔹 Evasão por Variáveis Numéricas
+  - Total Gasto (TotalCharges): Clientes que saíram tendem a ter menor gasto acumulado.
+  - Tempo de Contrato (tenure): A maioria dos cancelamentos ocorre nos primeiros meses de contrato.
+
+
+Conclusões e Insights
+- A evasão está concentrada em clientes com contratos mensais, baixo tempo de permanência e menor valor gasto.
+- Métodos de pagamento menos automáticos (como boleto) estão associados a maior evasão.
+- Clientes com menor engajamento financeiro tendem a cancelar mais rapidamente.
+
+5. Recomendações
+Com base na análise, recomenda-se:
+  - Incentivar contratos de longo prazo com benefícios para fidelização.
+  - Oferecer vantagens para migração de métodos de pagamento para débito automático ou cartão.
+  - Monitorar clientes com baixo tempo de contrato e baixo gasto para ações de retenção proativa.
+  
