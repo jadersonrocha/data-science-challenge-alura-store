@@ -1,0 +1,81 @@
+Relatório de Análise de Evasão de Clientes
+
+Objetivo
+O objetivo deste estudo é identificar os principais fatores que influenciam a evasão de clientes (churn) e propor estratégias de retenção com base nos resultados 
+obtidos por diferentes modelos de machine learning.
+
+
+
+Metodologia
+
+A análise foi conduzida com base em dados de clientes contendo informações contratuais, demográficas e de uso de serviços. 
+O processo metodológico seguiu as etapas abaixo:
+
+Preparação dos Dados
+   * Limpeza e tratamento de valores nulos.
+   * Codificação de variáveis categóricas (One-Hot Encoding).
+   * Padronização de variáveis numéricas com StandardScaler.
+
+Modelagem Preditiva
+Onde foram aplicados os seguintes modelos:
+   * Random Forest
+   * Logistic Regression
+   * K-Nearest Neighbors (KNN)
+Os dados foram divididos em treino (70%) e teste (30%), com validação cruzada em alguns casos.
+
+Avaliação dos Modelos
+Os modelos foram avaliados por:
+  * Acurácia, F1-score, AUC ROC
+  * Matriz de confusão e curva ROC
+
+Interpretação das Variáveis
+A importância das variáveis foi estimada por:
+   * Permutação Importance
+   * Feature Importance (Random Forest)
+   * Coeficientes da Regressão Logística
+
+Essas técnicas permitiram identificar os principais fatores associados à evasão e embasar as estratégias de retenção propostas.
+
+
+Principais Fatores que Influenciam a Evasão
+
+Com base na análise das variáveis mais relevantes nos modelos, os seguintes fatores foram consistentemente associados à evasão de clientes:
+
+| Fator                         | Descrição                                                                 | Impacto na Evasão |
+|-------------------------------|---------------------------------------------------------------------------|-------------------|
+|   Tempo de contrato**         | Clientes com contratos mensais tendem a evadir mais do que anuais         | Alto              |
+|   Serviço de suporte técnico  | Reclamações ou baixa satisfação com suporte técnico                       | Alto              |
+|   Cobranças extras            | Presença de taxas adicionais ou cobranças inesperadas                     | Moderado          |
+|   Uso de serviços adicionais  | Clientes que não utilizam serviços extras (streaming, backup, etc.)       | Moderado          |
+|   Forma de pagamento          | Pagamentos via boleto ou cheque têm maior evasão que cartão automático    | Moderado          |
+|   Idade do cliente            | Faixas etárias mais jovens apresentam maior propensão à troca de serviço  | Baixo             |
+
+Estratégias de Retenção
+
+Com base nos fatores identificados, propomos as seguintes estratégias:
+
+Personalização de Contratos
+   * Oferecer descontos ou benefícios para contratos anuais.
+   * Criar planos flexíveis com fidelização progressiva.
+Melhoria no Suporte Técnico
+   * Investir em atendimento omnichannel e treinamento de equipe.
+   * Implementar feedback contínuo e resolução proativa de problemas.
+
+Transparência nas Cobranças
+   * Revisar políticas de cobrança e comunicar claramente os custos.
+   * Eliminar taxas ocultas e oferecer pacotes com preço fixo.
+
+Incentivo ao Uso de Serviços Adicionais
+   * Criar campanhas de engajamento para serviços extras.
+   * Oferecer testes gratuitos ou bônus por uso contínuo.
+
+Modernização dos Meios de Pagamento
+   * Incentivar o uso de débito automático com benefícios exclusivos.
+   * Facilitar pagamentos via app ou carteira digital.
+
+Conclusão
+
+A evasão de clientes é multifatorial, mas os modelos aplicados permitiram identificar padrões consistentes. 
+A combinação de análise estatística e machine learning revelou que fatores contratuais, suporte técnico e cobrança são os principais pontos de atenção. 
+A adoção de estratégias direcionadas pode reduzir significativamente a taxa de evasão e aumentar a fidelização.
+
